@@ -17,19 +17,20 @@
 }
 .navigation {
   display: flex;
-  width: 80%;
-  gap: 50px;
+  width: 100%;
+  gap: 2%;
   align-items: center;
   justify-content: end;
-  padding: 0px 10%;
+  padding: 0px 5%;
 }
-.navigation ul li {
-  font-size: clamp(12px, 2vw, 24px); /* Responsive font size */
+.navlist li {
+  font-size: clamp(20px, 2vw, 24px); /* Responsive font size */
   padding: 10px 20px; /* Adjust padding for spacing */
   list-style: none; /* Remove bullets */
   display: inline-block; /* For horizontal navigation */
+  overflow: hidden;
 }
-.navigation ul li:hover {
+.navlist li:hover {
   background-color: black;
   color: aliceblue;
   border-radius: 20px;
@@ -42,3 +43,37 @@
   font-family: "MyCustomFont", sans-serif;
   font-size: clamp(12px, 2vw, 24px);
 }
+.HixMark,
+.GiHamburgerMenu {
+  display: none;
+}
+.navlistmobile {
+  display: block;
+  text-decoration: none;
+  list-style: none;
+  position: absolute;
+  border-radius: 20px;
+  margin-top: 70%;
+  width: 30%;
+  background: transparent;
+}
+.navlistmobile li {
+  padding: 30px 10px;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+.navlistmobile li:hover {
+  background-color: black;
+  color: aliceblue;
+}
+
+@media screen and (max-width: 515px) {
+  .navlist li {
+    display: none;
+  }
+  .HixMark,
+  .GiHamburgerMenu {
+    display: block;
+  }
+}
+/* navlist */
