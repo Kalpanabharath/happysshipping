@@ -66,6 +66,11 @@
   background-color: black;
   color: aliceblue;
 }
+.nav-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Use the inherited color (the same as the parent) */
+  /* You can also set a specific color, e.g., color: black; */
+}
 
 @media screen and (max-width: 515px) {
   .navlist li {
