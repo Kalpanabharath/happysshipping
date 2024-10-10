@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Product from "./components/Product";
 import Cart from "./components/Cart";
 import Notfound from "./components/Notfound";
+import Login from "./components/Login";
 
 class App extends Component {
   render() {
@@ -16,6 +17,8 @@ class App extends Component {
           <Route path="/" element={<Home />} />
           <Route path="/Product" element={<Product />} />
           <Route path="/Cart" element={<Cart />} />
+          <Route path="/Login" element={<Login />} />
+
           <Route path="*" element={<Notfound />} />
         </Routes>
       </div>

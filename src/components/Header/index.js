@@ -2,6 +2,8 @@ import { Component } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { HiXMark } from "react-icons/hi2";
 import { Link } from "react-router-dom";
+import Cookies from "js-cookie";
+import Login from "../Login";
 
 import "./index.css";
 
@@ -19,6 +21,7 @@ class Header extends Component {
   render() {
     const { userlogin, openmobleview } = this.state;
     const navclass = openmobleview ? "navlistmobile" : "navlist";
+    let jwtToken = Cookies.get("jwt-token");
 
     return (
       <div className="header">
@@ -51,7 +54,14 @@ class Header extends Component {
               </Link>
             </li>
           </ul>
-          {userlogin ? <button>Log Out</button> : <button>Login</button>}
+
+          {jwtToken !== undefined ? (
+            <Link to="../Login">
+              <button>Login</button>
+            </Link>
+          ) : (
+            <button>Log Out</button>
+          )}
           {openmobleview ? (
             <HiXMark className="HiXMark" onClick={this.changeopenmobile} />
           ) : (
