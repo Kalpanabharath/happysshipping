@@ -3,7 +3,6 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { HiXMark } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 import Cookies from "js-cookie";
-import Login from "../Login";
 
 import "./index.css";
 
@@ -19,7 +18,7 @@ class Header extends Component {
   };
 
   render() {
-    const { userlogin, openmobleview } = this.state;
+    const { openmobleview } = this.state;
     const navclass = openmobleview ? "navlistmobile" : "navlist";
     let jwtToken = Cookies.get("jwt-token");
 

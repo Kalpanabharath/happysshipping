@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import "./index.css";
 
 export class Login extends Component {
@@ -6,20 +7,23 @@ export class Login extends Component {
     return (
       <div className="loginpage">
         <div className="imagediv">
-          <img src="../loginpageimg.png" alt="login page image" />
+          <img
+            src="https://www.clipartmax.com/png/middle/296-2961119_logo-happy-shopping-logo-png.png"
+            alt="Login page illustration"
+          />
         </div>
         <div className="form">
-          <h3> Login form</h3>
+          <h3>Login form</h3>
           <form>
             <div className="namediv">
               <label>Name</label>
               <input type="text" />
             </div>
             <div className="emailid">
-              <label>Email </label>
+              <label>Email</label>
               <input type="password" />
             </div>
-            <button class="custom-btn btn-6">
+            <button className="custom-btn btn-6">
               <span>Read More</span>
             </button>
           </form>
