@@ -8,7 +8,7 @@ export class Login extends Component {
       <div className="loginpage">
         <div className="imagediv">
           <img
-            src={`${process.env.PUBLIC_URL}/happyBasketlogo.png`}
+            src={`${process.env.PUBLIC_URL}/HappyBasketlogo.png`}
             alt="My Image"
           />
         </div>
