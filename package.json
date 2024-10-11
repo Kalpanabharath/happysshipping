@@ -1,8 +1,8 @@
 {
+  "homepage": "https://kalpanabharath.github.io/happy-shipping",
   "name": "happybasket",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Kalpanabharath.github.io/happy-shipping/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -42,7 +42,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1",
+    "gh-pages": "^6.2.0",
     "webpack": "^5.95.0"
   }
 }
