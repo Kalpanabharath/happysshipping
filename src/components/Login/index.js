@@ -8,8 +8,8 @@ export class Login extends Component {
       <div className="loginpage">
         <div className="imagediv">
           <img
-            src="https://www.clipartmax.com/png/middle/296-2961119_logo-happy-shopping-logo-png.png"
-            alt="Login page illustration"
+            src={`${process.env.PUBLIC_URL}/happyBasketlogo.png`}
+            alt="My Image"
           />
         </div>
         <div className="form">

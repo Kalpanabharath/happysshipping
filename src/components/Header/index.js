@@ -25,7 +25,11 @@ class Header extends Component {
     return (
       <div className="header">
         <div className="logo">
-          <img src="../happy Shopping.png" alt="Logo" className="logoimg" />
+          <img
+            src={`${process.env.PUBLIC_URL}/happyShopping.png`}
+            alt="My Image"
+            className="logoimg"
+          />
         </div>
         <div className="navigation">
           <ul className={navclass}>
