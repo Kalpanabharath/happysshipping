@@ -4,7 +4,11 @@ import "./index.css";
 const Notfound = () => {
   return (
     <div className="notfound">
-      <img src="../notfoundpage.jpg" alt="notfoundimage" />
+      <img
+        src={`${process.env.PUBLIC_URL}/notfoundpage.jpg`}
+        alt="My Image"
+        className="logoimg"
+      />
     </div>
   );
 };
