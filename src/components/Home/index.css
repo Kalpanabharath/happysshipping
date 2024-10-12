@@ -1,0 +1,105 @@
+.container {
+  display: flex; /* Using flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between content and image */
+
+  background-image: linear-gradient(
+    to left top,
+    #b5c6de,
+    #abcce2,
+    #a2d2e1,
+    #9dd7dc,
+    #9edbd3
+  );
+  height: 90vh;
+  overflow: hidden;
+}
+
+.text-section {
+  display: flex; /* Takes remaining space */
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px; /* Space between text and image */
+  min-width: 300px; /* Minimum width to ensure readability */
+
+  width: 50%;
+  height: 100%;
+}
+
+.hero {
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  height: fit-content;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #333; /* Darker color for the title */
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #555; /* Slightly lighter color for the subtitle */
+}
+
+p {
+  font-size: 1.1em;
+  color: #666; /* Medium gray for the paragraph text */
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #28a745; /* Green button color */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.image-section {
+  flex: 1; /* Takes remaining space */
+  text-align: center; /* Center the image */
+
+  width: 100%;
+  height: 100%;
+}
+
+.image-section img {
+  max-width: 100%; /* Responsive image */
+  border-radius: 8px; /* Rounded corners for the image */
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse; /* Stack items vertically on smaller screens */
+    padding: 20px; /* Reduce padding */
+    height: fit-content;
+  }
+
+  .text-section {
+    padding-right: 0; /* Remove right padding */
+    margin-bottom: 20px; /* Add margin below text section */
+  }
+  .hero {
+    padding: none;
+
+    width: 100%;
+  }
+  .text-section {
+    padding: none;
+    width: 100%;
+    text-align: center;
+  }
+}

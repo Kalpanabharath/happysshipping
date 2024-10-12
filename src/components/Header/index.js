@@ -37,11 +37,11 @@ class Header extends Component {
 
           return (
             <div className="header">
-              <div className="logo">
+              <div className="logo ">
                 <img
                   src={`${process.env.PUBLIC_URL}/happyShopping.png`}
                   alt="My Image"
-                  className="logoimg"
+                  className="logoimg  tada"
                 />
               </div>
               <div className="navigation">
