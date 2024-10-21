@@ -1,0 +1,119 @@
+.discription {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically on all devices */
+  align-items: center; /* Center-align items */
+  padding: 20px; /* Add padding */
+  background-color: #f9f9f9; /* Light background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 600px; /* Maximum width */
+  margin: 20px auto; /* Center horizontally */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  position: relative;
+}
+.hearticon {
+  position: absolute;
+  color: red;
+  right: 10%;
+  top: 10%;
+}
+.star-rating {
+  position: relative;
+  display: inline-block;
+  font-size: 50px; /* Adjust size as needed */
+}
+
+/* Styling for empty stars */
+.empty-star-rating {
+  color: lightgray; /* Color for empty stars */
+}
+
+/* Styling for filled stars */
+.filled-star-rating {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden; /* Clip the filled stars if necessary */
+  color: gold; /* Color for filled stars */
+}
+
+.product-image {
+  width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Round image corners */
+}
+
+.titlcatagory {
+  text-align: center; /* Center text */
+  margin: 10px 0; /* Spacing around title and category */
+}
+
+.product-title {
+  font-size: 1.5em; /* Larger font size for title */
+  margin: 0; /* Remove default margin */
+  font-weight: bold; /* Bold title */
+}
+
+.product-category {
+  color: #888; /* Lighter color for category */
+  margin: 0; /* Remove default margin */
+}
+
+.procerating {
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Space out price and rating */
+  width: 100%; /* Full width */
+  margin: 10px 0; /* Spacing around price and rating */
+}
+
+.product-price,
+.product-rating {
+  font-size: 1em; /* Regular font size */
+  margin: 0; /* Remove default margin */
+  font-weight: bold; /* Bold for emphasis */
+}
+
+.product-description {
+  text-align: center; /* Center description text */
+  margin-top: 15px; /* Spacing above description */
+}
+
+/* Responsive Styles */
+@media (min-width: 600px) {
+  .discription {
+    flex-direction: column; /* Maintain vertical stacking */
+    padding: 30px; /* Add more padding on larger screens */
+    max-width: 60%;
+  }
+
+  .product-image {
+    width: 50%; /* Keep image responsive */
+  }
+
+  .titlcatagory,
+  .procerating {
+    width: 100%; /* Text takes full width */
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    align-items: center; /* Center align text elements */
+  }
+
+  .product-title {
+    font-size: 2em; /* Larger title font on larger screens */
+  }
+
+  .product-price {
+    font-size: 1.2em; /* Slightly larger price font */
+    color: #333; /* Darker color for price */
+  }
+
+  .product-rating {
+    font-size: 1em; /* Regular font size for rating */
+    color: #555; /* Medium color for rating */
+  }
+
+  .product-description {
+    font-size: 1.1em; /* Slightly larger description font */
+    margin-top: 20px; /* More space above description */
+  }
+}

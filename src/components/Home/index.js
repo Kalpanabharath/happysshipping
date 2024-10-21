@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./index.css";
+import { Link } from "react-router-dom";
 
 export class Home extends Component {
   render() {
@@ -18,8 +19,8 @@ export class Home extends Component {
               Join our community of satisfied shoppers and discover why
               happiness is just a click away.
             </p>
-            <a href="/shop" className="cta-button">
-              Shop Now!
+            <a href="/shop" className="cta-button bounceIn">
+              <Link to="./Product"> Shop Now!</Link>
             </a>
           </div>
         </div>

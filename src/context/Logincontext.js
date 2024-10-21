@@ -4,6 +4,12 @@ import { createContext } from "react";
 const Logincontext = createContext({
   userlogin: false,
   changelogin: () => {},
+  mycart: [],
+  addproduct: () => {},
+  removeproduct: () => {},
+  myfav: [],
+  myfavadd: () => {},
+  myfavremove: () => {},
 });
 
 export default Logincontext;

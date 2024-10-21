@@ -33,7 +33,7 @@ class Header extends Component {
     return (
       <Logincontext.Consumer>
         {(value) => {
-          const { userlogin, changelogin } = value; // Destructure from context
+          const { userlogin, changelogin, mycart } = value; // Destructure from context
 
           return (
             <div className="header">
@@ -57,8 +57,11 @@ class Header extends Component {
                     </Link>
                   </li>
                   <li onClick={this.closemobileview}>
-                    <Link to="./Cart" className="nav-link">
+                    <Link to="./Cart" className="nav-link  cardnav">
                       Cart
+                      <p className="cardcounthead">
+                        {mycart.reduce((acc, item) => acc + item.count, 0)}
+                      </p>
                     </Link>
                   </li>
                 </ul>
