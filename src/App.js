@@ -1,7 +1,7 @@
 import "./App.css";
 import { Component } from "react";
 import Header from "./components/Header";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import Home from "./components/Home";
 import Product from "./components/Product";
 import Cart from "./components/Cart";
@@ -107,6 +107,7 @@ class App extends Component {
 
           <Routes>
             <Route path="/" element={<Productedroute element={Home} />} />
+            <Route path="/HappysShipping" element={<Navigate to="/" />} />
             <Route
               path="/Product"
               element={<Productedroute element={Product} />}
