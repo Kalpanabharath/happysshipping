@@ -8,9 +8,9 @@ export class Home extends Component {
       <div className="container">
         <div className="text-section">
           <div className="hero">
-            <h1>Welcome to HappyCart!</h1>
-            <h2>Where Shopping Meets Joy!</h2>
-            <p>
+            <h1 className="heding">Welcome to HappyCart!</h1>
+            <h2 className="homesub">Where Shopping Meets Joy!</h2>
+            <p className="homepara">
               At HappyCart, we believe that shopping should be a delightful
               experience. Explore our wide range of products, from the latest
               fashion trends to essential home goods, all curated to bring you

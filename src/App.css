@@ -6,3 +6,16 @@
 }
 
 /* You can set a default font for the whole app */
+@font-face {
+  font-family: "homepage";
+  src: url("../public/homepage.ttf") format("truetype"); /* Adjust the path based on where your font is stored */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family:"SignikaNegative";
+  src: url("../public/SignikaNegative.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+
+}

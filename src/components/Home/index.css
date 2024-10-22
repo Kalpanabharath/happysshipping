@@ -14,7 +14,14 @@
   height: 90vh;
   overflow: hidden;
 }
-
+.heding {
+  font-family: "homepage";
+  color: rgb(189, 28, 95);
+}
+.homesub,
+.homepara {
+  font-family: "SignikaNegative";
+}
 .text-section {
   display: flex; /* Takes remaining space */
   justify-content: center;
