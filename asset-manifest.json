@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/HappysShipping/static/css/main.9b257b34.css",
-    "main.js": "/HappysShipping/static/js/main.7dd2f637.js",
-    "static/js/453.54f5a032.chunk.js": "/HappysShipping/static/js/453.54f5a032.chunk.js",
+    "main.js": "/HappysShipping/static/js/main.ba59dce1.js",
+    "static/js/453.708e0f73.chunk.js": "/HappysShipping/static/js/453.708e0f73.chunk.js",
     "static/media/homepage.ttf": "/HappysShipping/static/media/homepage.82570a17a32c5ec97a1d.ttf",
     "static/media/SignikaNegative.ttf": "/HappysShipping/static/media/SignikaNegative.6d9b5a88a3ef93cf273d.ttf",
     "static/media/Nightydemo.otf": "/HappysShipping/static/media/Nightydemo.57e9c56427f8a725ada0.otf",
     "index.html": "/HappysShipping/index.html",
     "main.9b257b34.css.map": "/HappysShipping/static/css/main.9b257b34.css.map",
-    "main.7dd2f637.js.map": "/HappysShipping/static/js/main.7dd2f637.js.map",
-    "453.54f5a032.chunk.js.map": "/HappysShipping/static/js/453.54f5a032.chunk.js.map"
+    "main.ba59dce1.js.map": "/HappysShipping/static/js/main.ba59dce1.js.map",
+    "453.708e0f73.chunk.js.map": "/HappysShipping/static/js/453.708e0f73.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9b257b34.css",
-    "static/js/main.7dd2f637.js"
+    "static/js/main.ba59dce1.js"
   ]
 }
